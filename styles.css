@@ -1,0 +1,93 @@
+/**********************************************
+Root variables
+**********************************************/
+:root {
+	--clr-white: #fef7f2;
+	--clr-black: #0b1726;
+
+	--clr-pink: #a6376a;
+	--clr-blue: #25598c;
+	--clr-blue-accent: #57c6c9;
+	--clr-green: #acc96d;
+	--clr-green-dark: #3a8c59;
+	--clr-orange: #f2a72a;
+
+	--clr-grey-lighter: ##626770;
+	--clr-grey-light: #3b3e43;
+	--clr-grey-neutral: #2c2e31;
+	--clr-grey-dark: ##1d1d1d;
+	--clr-transparent: hsl(120deg 75% 25% / 0);
+
+	--ff-def: "Zilla Slab", serif;
+	--ff-header: "Barriecito", cursive;
+	--ff-subHeader: "Yanone Kaffeesatz", sans-serif;
+
+	--fw-200: 200;
+	--fw-300: 300;
+	--fw-400: 400;
+	--fw-500: 500;
+	--fw-600: 600;
+	--fw-600: 700;
+}
+
+/**********************************************
+Global styles
+**********************************************/
+/* ----------Resets---------- */
+/* Box sizing rules -- Suggested by Andy Bell - https://andy-bell.co.uk/a-modern-css-reset/ */
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+/* Remove default margin -- Suggested by Andy Bell - https://andy-bell.co.uk/a-modern-css-reset/ */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+	margin: 0;
+}
+
+/* Set core root defaults -- Suggested by Andy Bell - https://andy-bell.co.uk/a-modern-css-reset/ */
+html:focus-within {
+	scroll-behavior: smooth;
+}
+
+body {
+	min-height: 100vh;
+	min-height: 100svh; /* Suggested by Kevin Powell - https://www.youtube.com/@KevinPowell */
+	background-color: var(--clr-grey-lighter);
+	font-family: var(--ff-def);
+	color: var(--clr-white);
+	accent-color: var(
+		--clr-pink
+	); /* Suggested by bryntum - https://bryntum.com/blog/3-ways-to-style-radio-buttons-with-modern-css/ */
+}
+
+img,
+picture {
+	/* Suggested by Kevin Powell - https://www.youtube.com/@KevinPowell */
+	display: block;
+	max-width: 100%;
+}
+
+/* Inherit fonts for inputs and buttons -- Suggested by Andy Bell - https://andy-bell.co.uk/a-modern-css-reset/ */
+input,
+button,
+textarea,
+select {
+	font: inherit;
+}
+
+/* ----------Sections---------- */
+
+/* ----------Elements---------- */
+
+/* ----------Utility---------- */
