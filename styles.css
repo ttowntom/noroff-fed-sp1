@@ -12,7 +12,7 @@ Root variables
 	--clr-green-dark: #3a8c59;
 	--clr-orange: #f2a72a;
 
-	--clr-grey-lighter: ##626770;
+	--clr-grey-lighter: #626770;
 	--clr-grey-light: #3b3e43;
 	--clr-grey-neutral: #2c2e31;
 	--clr-grey-dark: ##1d1d1d;
@@ -63,12 +63,14 @@ html:focus-within {
 body {
 	min-height: 100vh;
 	min-height: 100svh; /* Suggested by Kevin Powell - https://www.youtube.com/@KevinPowell */
-	background-color: var(--clr-grey-lighter);
+	background-color: var(--clr-grey-light);
 	font-family: var(--ff-def);
 	color: var(--clr-white);
 	accent-color: var(
 		--clr-pink
 	); /* Suggested by bryntum - https://bryntum.com/blog/3-ways-to-style-radio-buttons-with-modern-css/ */
+	display: grid;
+	grid-template-rows: auto 1fr auto;
 }
 
 img,
@@ -86,8 +88,154 @@ select {
 	font: inherit;
 }
 
+ul {
+	margin-block-start: 0;
+	margin-block-end: 0;
+	padding-inline-start: 0;
+}
+
+nav ul li {
+	list-style: none;
+}
+
 /* ----------Sections---------- */
+
+header,
+main {
+	width: 100%;
+	margin-inline: auto;
+}
+
+header {
+	padding: 1rem 0;
+	align-items: center;
+}
+
+main {
+	background-color: var(--clr-grey-neutral);
+}
 
 /* ----------Elements---------- */
 
+h1,
+h2 {
+	font-family: var(--ff-header);
+	font-weight: var(--fw-600);
+}
+
+h1 {
+	font-size: 3rem;
+	line-height: 1.2;
+}
+
+h2 {
+	font-size: 2.5rem;
+	line-height: 1.1;
+}
+
+h3 {
+	font-family: var(--ff-subHeader);
+	font-weight: var(--fw-600);
+	font-size: 2rem;
+	line-height: 1;
+}
+
+a {
+	text-decoration: none;
+}
+
+.nav-list li:not(:last-child) {
+	margin-right: 1rem;
+}
+
+.nav-list li a {
+	font-family: var(--ff-subHeader);
+	color: var(--clr-white);
+	font-size: 1.5rem;
+}
+
+.nav-list li a:is(:hover, :active, :focus) {
+	text-decoration: underline;
+}
+
 /* ----------Utility---------- */
+.grid {
+	display: grid;
+}
+
+.flex {
+	display: flex;
+}
+
+.flex-no-wrap {
+	flex-wrap: nowrap;
+}
+
+.flex-row {
+	flex-direction: row;
+}
+
+.flex-space-between {
+	justify-content: space-between;
+}
+
+.relative {
+	position: relative;
+}
+
+.absolute-top-right {
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+
+/* ----------Header---------- */
+.opening-hours {
+	font-family: var(--ff-subHeader);
+	background-color: var(--clr-green);
+	color: var(--clr-black);
+	padding: 0.5rem 0.25rem 0.25rem 0.5rem;
+	border-radius: 0 0 0 5px;
+}
+
+.opening-hours span {
+	color: var(--clr-pink);
+	font-weight: var(--fw-600);
+}
+
+/**********************************************
+Media queries
+**********************************************/
+/* ----------------------------------------Tablet + Desktop---------------------------------------- */
+@media (min-width: 767px) {
+	/* ----------Sections---------- */
+	main,
+	header {
+		max-width: 1170px;
+	}
+
+	header {
+		grid-template-columns: 1fr auto 1fr;
+	}
+
+	.container {
+		padding-inline: 2rem;
+	}
+
+	/* ----------Header---------- */
+	.logo-header {
+		padding-left: 2rem;
+	}
+}
+
+/* ----------------------------------------Mobile---------------------------------------- */
+@media (max-width: 766px) {
+	/* ----------Sections---------- */
+	header {
+		grid-template-columns: max-content auto auto;
+	}
+
+	.container {
+		padding-inline: 0.5rem;
+	}
+}
