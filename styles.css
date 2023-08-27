@@ -2,6 +2,7 @@
 Root variables
 **********************************************/
 :root {
+	--clr-white-actual: #fff;
 	--clr-white: #fef7f2;
 	--clr-black: #0b1726;
 
@@ -108,7 +109,8 @@ main {
 
 header {
 	position: relative;
-	padding: 1rem 0;
+	background: linear-gradient(var(--clr-blue-accent), #3883a4);
+	padding: 0.5rem 0;
 	align-items: center;
 }
 
@@ -181,6 +183,10 @@ a {
 	position: relative;
 }
 
+.sticky {
+	position: sticky;
+}
+
 .absolute-top-right {
 	position: absolute;
 	top: 0;
@@ -238,10 +244,6 @@ nav,
 	transform: rotateY(180deg);
 }
 
-.custom-shape-divider-top-1692963440 .shape-fill {
-	fill: #ffffff;
-}
-
 /**********************************************
 Media queries
 **********************************************/
@@ -297,6 +299,7 @@ Media queries
 	/* ----------Sections---------- */
 	header {
 		grid-template-columns: max-content auto auto;
+		z-index: 10;
 	}
 
 	.container {
@@ -306,13 +309,18 @@ Media queries
 	/* ----------Header---------- */
 	nav {
 		position: absolute;
-		top: 6rem;
+		top: 5.2rem;
 		width: 100%;
 		padding-top: 7rem;
 		padding-bottom: 3rem;
 		text-align: center;
-		background-color: var(--clr-white);
-		border-radius: 0 0 5px 5px;
+		background-color: var(--clr-white-actual);
+		border-radius: 0 0 15px 15px;
+		box-shadow: 0 1rem 1rem var(--clr-grey-neutral);
+	}
+
+	.divider {
+		z-index: 10;
 	}
 
 	.nav-list {
