@@ -29,7 +29,7 @@ Root variables
 	--fw-400: 400;
 	--fw-500: 500;
 	--fw-600: 600;
-	--fw-600: 700;
+	--fw-700: 700;
 }
 
 /**********************************************
@@ -359,6 +359,14 @@ section h2 {
 		url("/img/hero/home.jpg") no-repeat center center;
 }
 
+/* ----------Exhibition background images---------- */
+#exhibition--img-cosmicOdyssey {
+	background-image: url("/img/exhibitions/cosmicOdyssey.jpg");
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+}
+
 /* ----------Header---------- */
 
 #nav-main,
@@ -406,21 +414,41 @@ section h2 {
 }
 
 /* ----------Exhibitions---------- */
+
 .exhibition-card {
+	position: relative;
+	overflow: hidden;
+	background-color: var(--clr-grey-neutral);
 	border: 3px solid var(--clr-pink);
 	border-radius: 15px 15px 0 0;
 }
 
-.exhibition-card p {
+.exhibition-card-content {
+	position: relative;
+	z-index: 2;
+	color: var(--clr-white);
+}
+
+.exhibition-card-content p {
 	margin-block: 1.5rem;
 }
-.exhibition-card p:first-of-type {
+.exhibition-card-content p:first-of-type {
 	margin-top: 0.5rem;
 }
 
-.exhibition-card,
+.exhibition-card-content,
 .exhibition-card-link {
 	padding: 1rem;
+}
+
+.exhibition-card--overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.6);
+	z-index: 1;
 }
 
 .exhibition-card-link {
@@ -531,7 +559,7 @@ Media queries
 	}
 
 	/* ----------Exhibitions---------- */
-	.exhibition-card,
+	.exhibition-card-content,
 	.exhibition-card-link {
 		padding: 1.5rem 2rem;
 	}
