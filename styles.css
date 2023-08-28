@@ -120,6 +120,12 @@ main {
 	background-color: var(--clr-grey-neutral);
 }
 
+main::after {
+	content: "";
+	display: block;
+	height: 5rem;
+}
+
 footer {
 	background-color: var(--clr-blue-dark);
 }
@@ -167,9 +173,14 @@ a {
 	text-decoration: none;
 }
 
-.container h2 {
+.container h2,
+section h2 {
 	margin-top: 2rem;
 	margin-bottom: 1rem;
+}
+
+section h2 {
+	margin-top: 4rem;
 }
 
 .container p {
@@ -293,6 +304,42 @@ a {
 	color: var(--clr-white);
 }
 
+.category {
+	font-family: var(--ff-subHeader);
+	background-color: var(--clr-blue);
+	width: min-content;
+	padding: 0.25rem 0.5rem;
+	border-radius: 5rem;
+}
+
+.icon-duotone {
+	position: relative;
+	padding-left: 1.25em;
+}
+
+.icon-duotone::before,
+.icon-duotone::after {
+	font-family: "Font Awesome 5 Duotone";
+	font-weight: 900;
+	position: absolute;
+	right: 2rem;
+	top: 50%;
+	transform: translateY(-50%);
+	width: 1.25em;
+	text-align: center;
+}
+
+.icon-duotone::before {
+	color: var(--fa-primary-color, inherit);
+	opacity: 1;
+	opacity: var(--fa-primary-opacity, 1);
+}
+
+.icon-duotone::after {
+	color: var(--fa-secondary-color, inherit);
+	opacity: var(--fa-secondary-opacity, 0.4);
+}
+
 /* ----------Hero---------- */
 .hero--img {
 	background-size: cover;
@@ -356,6 +403,40 @@ a {
 	width: calc(100% + 1.3px);
 	height: 4rem;
 	transform: rotateY(180deg);
+}
+
+/* ----------Exhibitions---------- */
+.exhibition-card {
+	border: 3px solid var(--clr-pink);
+	border-radius: 15px 15px 0 0;
+}
+
+.exhibition-card p {
+	margin-block: 1.5rem;
+}
+.exhibition-card p:first-of-type {
+	margin-top: 0.5rem;
+}
+
+.exhibition-card,
+.exhibition-card-link {
+	padding: 1rem;
+}
+
+.exhibition-card-link {
+	display: inline-block;
+	width: 100%;
+	background-color: var(--clr-pink);
+	font-family: var(--ff-subHeader);
+	color: var(--clr-white);
+	font-size: 1.5rem;
+}
+
+.exhibition-card-link:before {
+	content: "\f061";
+}
+.exhibition-card-link:after {
+	content: "\f061\f061";
 }
 
 /* ----------Footer---------- */
@@ -448,6 +529,13 @@ Media queries
 	.nav-list-header {
 		flex-direction: row;
 	}
+
+	/* ----------Exhibitions---------- */
+	.exhibition-card,
+	.exhibition-card-link {
+		padding: 1.5rem 2rem;
+	}
+
 	/* ----------Footer---------- */
 	.footer-main {
 		flex-direction: row;
