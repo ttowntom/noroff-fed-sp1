@@ -471,6 +471,7 @@ section h2 {
 .exhibition-card-link {
 	display: inline-block;
 	width: 100%;
+	height: min-content;
 	background-color: var(--clr-pink);
 	font-family: var(--ff-subHeader);
 	color: var(--clr-white);
