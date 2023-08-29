@@ -290,6 +290,10 @@ section h2 {
 	right: 0;
 }
 
+.margin-top-2 {
+	margin-top: 2rem;
+}
+
 .socials {
 	font-size: 2rem;
 	flex-direction: row;
@@ -425,6 +429,10 @@ section h2 {
 #hero--img-home {
 	background: linear-gradient(to top, hsla(0, 0%, 0%, 0.9), transparent 80%),
 		url("/img/hero/home.jpg") no-repeat center center;
+}
+#hero--img-about {
+	background: linear-gradient(to top, hsla(0, 0%, 0%, 0.9), transparent 80%),
+		url("/img/hero/about.jpg") no-repeat center center;
 }
 
 /* ----------Exhibition background images---------- */
@@ -583,6 +591,44 @@ section h2 {
 	font-size: 0.85rem;
 }
 
+/* ----------About---------- */
+.about--wrapper {
+	display: flex;
+	flex-direction: column;
+	margin-top: 1rem;
+	border-radius: 15px;
+	color: var(--clr-black);
+}
+
+.about--wrapper img {
+	border-radius: 0 0 15px 15px;
+	max-height: 20rem;
+	width: 100%;
+	object-fit: cover;
+}
+
+.about--wrapper h2 {
+	margin: 1.5rem 0.5rem 0.5rem 0.5rem;
+}
+
+.about--wrapper p {
+	margin-inline: 0.5rem;
+	margin-bottom: 1rem;
+}
+
+.about--wrapper-green {
+	background-color: var(--clr-green);
+	border: 3px solid var(--clr-green);
+}
+.about--wrapper-orange {
+	background-color: var(--clr-orange);
+	border: 3px solid var(--clr-orange);
+}
+.about--wrapper-blue {
+	background-color: var(--clr-blue-accent);
+	border: 3px solid var(--clr-blue-accent);
+}
+
 /* ----------Footer---------- */
 .footer-main {
 	display: flex;
@@ -708,6 +754,44 @@ Media queries
 	/* ----------Events and news---------- */
 	.news--wrapper {
 		padding: 2rem 2rem;
+	}
+
+	/* ----------About---------- */
+	.about--wrapper {
+		flex-direction: row;
+		margin-inline: 2rem;
+	}
+
+	.about--wrapper div {
+		flex: 1;
+	}
+
+	.about--wrapper h2 {
+		margin: 1.5rem 2rem 0.5rem 2rem;
+	}
+
+	.about--wrapper p {
+		margin-inline: 2em;
+		margin-bottom: 1rem;
+	}
+
+	.about--wrapper p:last-of-type {
+		margin-bottom: 1.5rem;
+	}
+
+	.about--wrapper img {
+		border-radius: 0 15px 15px 0;
+		width: 50%;
+		max-height: 100%;
+		object-fit: cover;
+	}
+
+	.about--wrapper-reverse {
+		flex-direction: row-reverse;
+	}
+
+	.about--wrapper-reverse img {
+		border-radius: 15px 0 0 15px;
 	}
 
 	/* ----------Footer---------- */
