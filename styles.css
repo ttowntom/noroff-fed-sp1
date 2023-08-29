@@ -318,8 +318,7 @@ section h2 {
 }
 
 .icon-duotone {
-	position: relative;
-	padding-left: 1.25em;
+	padding-left: 0.5rem;
 }
 
 .icon-duotone::before,
@@ -432,57 +431,77 @@ section h2 {
 
 /* ----------Exhibitions---------- */
 
-.exhibition-card {
+.exhibitions--container {
+	display: grid;
+	margin: 2rem auto 5rem auto;
+	gap: 1rem;
+
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: stretch;
+}
+
+.exhibitions--wrapper {
 	position: relative;
-	overflow: hidden;
-	background-color: var(--clr-grey-neutral);
+	gap: 1rem;
+	grid-template-rows: auto auto 1fr auto;
+	background-color: var(--clr-black);
 	border: 3px solid var(--clr-pink);
 	border-radius: 15px 15px 0 0;
+	padding-inline: 0.4rem;
 }
-
-.exhibition-card-content {
-	position: relative;
-	z-index: 2;
-	color: var(--clr-white);
-}
-
-.exhibition-card-content p {
-	margin-block: 1.5rem;
-}
-.exhibition-card-content p:first-of-type {
-	margin-top: 0.5rem;
-}
-
-.exhibition-card-content,
-.exhibition-card-link {
-	padding: 1rem;
-}
-
-.exhibition-card--overlay {
+.exhibitions--wrapper::before {
+	content: "";
+	display: block;
 	position: absolute;
+	background-size: cover;
 	top: 0;
 	left: 0;
 	width: 100%;
 	height: 100%;
-	background-color: rgba(0, 0, 0, 0.6);
-	z-index: 1;
+	opacity: 0.3;
+}
+.exhibitions--wrapper p,
+.exhibitions--wrapper h3 {
+	position: relative;
+}
+.exhibitions--wrapper p:first-of-type {
+	margin-top: 1rem;
+}
+.exhibitions--wrapper p:last-of-type {
+	margin-bottom: 3rem;
 }
 
-.exhibition-card-link {
-	display: inline-block;
+.exhibition-wrapper-link {
+	position: absolute;
+	bottom: 0;
+	left: 0;
 	width: 100%;
-	height: min-content;
+	padding-block: 0.5rem;
 	background-color: var(--clr-pink);
 	font-family: var(--ff-subHeader);
 	color: var(--clr-white);
 	font-size: 1.5rem;
 }
-
-.exhibition-card-link:before {
+.exhibition-wrapper-link:before {
 	content: "\f061";
 }
-.exhibition-card-link:after {
+.exhibition-wrapper-link:after {
 	content: "\f061\f061";
+}
+
+/* Exhibitions cards backgrounds */
+.ehxibition--cosmology::before {
+	background-image: url("/img/exhibitions/cosmology.jpg");
+}
+.exhibition--evolution::before {
+	background-image: url("/img/exhibitions/evolution.jpg");
+}
+.exhibition--robotics::before {
+	background-image: url("/img/exhibitions/robotics.jpg");
+}
+.exhibition--ecology::before {
+	background-image: url("/img/exhibitions/ecology.jpg");
 }
 
 /* ----------Footer---------- */
@@ -583,11 +602,18 @@ Media queries
 	}
 
 	/* ----------Exhibitions---------- */
-	.exhibition-card-content {
-		padding: 1.5rem 2rem;
+	.exhibitions--container {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		justify-items: center;
+		padding-inline: 2rem;
 	}
 
-	.exhibition-card-link {
+	.exhibitions--wrapper {
+		padding: 0.5rem 2rem;
+	}
+
+	.exhibition-wrapper-link {
 		padding: 0.75rem 2rem;
 	}
 
