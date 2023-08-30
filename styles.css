@@ -434,6 +434,10 @@ section h2 {
 	background: linear-gradient(to top, hsla(0, 0%, 0%, 0.9), transparent 80%),
 		url("/img/hero/about.jpg") no-repeat center center;
 }
+#hero--img-contact {
+	background: linear-gradient(to top, hsla(0, 0%, 0%, 0.9), transparent 80%),
+		url("/img/hero/contact.jpg") no-repeat center center;
+}
 
 /* ----------Exhibition background images---------- */
 .exhibition--img {
@@ -504,7 +508,8 @@ section h2 {
 /* ----------Exhibitions---------- */
 
 .exhibitions--container,
-.news--container {
+.news--container,
+.contact-info--container {
 	display: grid;
 	gap: 1rem;
 }
@@ -627,6 +632,68 @@ section h2 {
 .about--wrapper-blue {
 	background-color: var(--clr-blue-accent);
 	border: 3px solid var(--clr-blue-accent);
+}
+
+/* ----------Contact---------- */
+.contact-info--container {
+	grid-template-columns: 1fr 1fr;
+}
+
+.contact-info--wrapper {
+	position: relative;
+	display: grid;
+	margin: 0 auto;
+	width: 100%;
+	padding-inline: 0.5rem;
+	padding-block: 1rem;
+	background-color: var(--clr-blue);
+	border: 3px solid var(--clr-grey-neutral);
+	border-radius: 15px;
+	text-align: center;
+}
+.contact-info--wrapper::before {
+	position: absolute;
+	font-family: "Font Awesome 5 Pro";
+	font-weight: 900;
+	color: var(--clr-white);
+	font-size: 6rem;
+	bottom: 0;
+	left: 0;
+	opacity: 0.1;
+}
+
+.contact-info--wrapper h3 {
+	font-size: 1.25rem;
+	margin-bottom: 0.5rem;
+}
+.contact-info--wrapper p {
+	margin-top: 0.5rem;
+	font-weight: var(--fw-600);
+}
+.contact-info--wrapper a {
+	color: var(--clr-white);
+}
+.contact-info--wrapper span {
+	display: block;
+	font-weight: var(--fw-300);
+}
+
+.contact--map {
+	width: 100%;
+	height: 20rem;
+	margin-top: -3rem;
+	border: 1px solid var(--clr-black);
+}
+
+/* Contact info cards backgrounds */
+.contact-info--hours::before {
+	content: "\f017";
+}
+.contact-info--contact::before {
+	content: "\f075";
+}
+.contact-info--location::before {
+	content: "\f041";
 }
 
 /* ----------Footer---------- */
@@ -792,6 +859,11 @@ Media queries
 
 	.about--wrapper-reverse img {
 		border-radius: 15px 0 0 15px;
+	}
+
+	/* ----------Contact---------- */
+	.contact-info--container {
+		grid-template-columns: repeat(3, 1fr);
 	}
 
 	/* ----------Footer---------- */
