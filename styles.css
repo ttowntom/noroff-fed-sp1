@@ -311,6 +311,11 @@ section h2 {
 	display: none;
 }
 
+.overflow-word {
+	/* Suggestion from StackOwerflow: https://stackoverflow.com/questions/60944202/horizontal-scrollbar-is-displayed-when-the-text-is-too-long */
+	word-break: break-word;
+}
+
 .btn--rounded {
 	padding: 0.75rem 1rem;
 	border-radius: 5rem;
@@ -325,6 +330,25 @@ section h2 {
 
 .btn--green {
 	background-color: var(--clr-green);
+	color: var(--clr-black);
+}
+
+.clr--white {
+	color: var(--clr-white);
+}
+.clr--blue {
+	color: var(--clr-blue);
+}
+.clr--pink {
+	color: var(--clr-pink);
+}
+.clr--green {
+	color: var(--clr-green-dark);
+}
+.clr-orange {
+	color: var(--clr-orange);
+}
+.clr-black {
 	color: var(--clr-black);
 }
 
@@ -513,7 +537,8 @@ section h2 {
 
 .exhibitions--container,
 .news--container,
-.contact-info--container {
+.contact-info--container,
+.tabs--container {
 	display: grid;
 	gap: 1rem;
 }
@@ -581,6 +606,55 @@ section h2 {
 	background-image: url("/img/exhibitions/ecology.jpg");
 }
 
+/* ----------Exhibition spaces---------- */
+.tabs--container > a:not(:first-of-type) {
+	margin-top: -2rem;
+}
+
+.tabs--wrapper {
+	padding: 0.5rem 0.5rem 2rem 0.5rem;
+	border-radius: 15px 15px 0 0;
+}
+
+.tabs--wrapper div:not(:first-of-type) {
+	display: block;
+}
+
+.tabs--wrapper div {
+	display: flex;
+	gap: 1rem;
+	margin-top: 1rem;
+	align-items: center;
+}
+
+.tabs--wrapper-icon {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: var(--clr-white);
+	padding: 0.75rem;
+	aspect-ratio: 1/1;
+	font-size: 1.5rem;
+	border-radius: 50%;
+}
+
+.tab--blue {
+	background-color: var(--clr-blue);
+}
+.tab--pink {
+	background-color: var(--clr-pink);
+}
+.tab--green {
+	background-color: var(--clr-green-dark);
+}
+.tab--orange {
+	background-color: var(--clr-orange);
+	color: var(--clr-black);
+}
+.tab--black {
+	background-color: var(--clr-grey-neutral);
+}
+
 /* ----------Events and news---------- */
 .news--wrapper {
 	gap: 1rem;
@@ -646,7 +720,7 @@ section h2 {
 .contact-info--wrapper {
 	position: relative;
 	display: grid;
-	align-content: center;
+	align-content: stretch;
 	margin: 0 auto;
 	width: 100%;
 	max-height: fit-content;
@@ -662,7 +736,8 @@ section h2 {
 	font-family: "Font Awesome 5 Pro";
 	font-weight: 900;
 	color: var(--clr-white);
-	font-size: 6rem;
+	/* font-size: 6rem; */
+	font-size: clamp(2rem, 10vw, 6rem);
 	bottom: 0;
 	left: 0;
 	opacity: 0.1;
@@ -826,6 +901,15 @@ Media queries
 
 	.exhibition-wrapper-link {
 		padding: 0.75rem 2rem;
+	}
+
+	/* ----------Exhibition spaces---------- */
+	.tabs--container {
+		grid-template-columns: repeat(2, 1fr);
+		padding-inline: 2rem;
+	}
+	.tabs--container > a:not(:nth-of-type(3)) {
+		margin-top: 0;
 	}
 
 	/* ----------Events and news---------- */
