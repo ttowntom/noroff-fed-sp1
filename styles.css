@@ -646,11 +646,12 @@ section h2 {
 .tabs--wrapper {
 	padding: 0.5rem 0.5rem 2rem 0.5rem;
 	border-radius: 15px 15px 0 0;
+	height: 100%;
 }
 
-.tabs--wrapper div:not(:first-of-type) {
+/* .tabs--wrapper div:not(:first-of-type) {
 	display: block;
-}
+} */
 
 .tabs--wrapper div {
 	display: flex;
@@ -1043,9 +1044,13 @@ Media queries
 		grid-template-columns: repeat(2, 1fr);
 		padding-inline: 2rem;
 	}
-	.tabs--container > a:not(:nth-of-type(3)) {
+
+	.tabs--container > a:nth-of-type(2) {
 		margin-top: 0;
 	}
+	/* .tabs--container > a:not(:nth-of-type(3)) {
+		margin-top: 0;
+	} */
 
 	/* ----------Events and news---------- */
 	.news--wrapper {
