@@ -885,6 +885,33 @@ section h2 {
 	transform: rotate(-45deg);
 }
 
+.support--thankyou {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	padding: 2rem;
+}
+
+.support--thankyou i {
+	font-size: 4rem;
+	color: var(--clr-blue-accent);
+}
+
+.support--thankyou p:first-of-type {
+	font-weight: var(--fw-600);
+}
+
+.support--thankyou p:last-of-type {
+	margin-top: 2rem;
+}
+
+.support--thankyou p span {
+	display: block;
+	font-weight: var(--fw-600);
+}
+
 /* ----------Footer---------- */
 .footer-main {
 	display: flex;
