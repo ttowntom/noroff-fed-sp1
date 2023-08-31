@@ -1,0 +1,41 @@
+/**********************************************
+Global styles
+**********************************************/
+/* ----------Sections---------- */
+
+header,
+main,
+footer {
+	width: 100%;
+	margin-inline: auto;
+}
+
+header {
+	position: relative;
+	background: linear-gradient(var(--clr-blue-accent), #3883a4);
+	padding: 0.5rem 0;
+	align-items: center;
+}
+
+main {
+	background-color: var(--clr-grey-neutral);
+}
+
+main::after {
+	content: "";
+	display: block;
+	height: 5rem;
+}
+
+footer {
+	background-color: var(--clr-blue-dark);
+}
+
+.footer-main {
+	padding-top: 1rem;
+}
+
+.footer-bottom {
+	background-color: var(--clr-grey-dark);
+	padding-block: 0.5rem;
+}
