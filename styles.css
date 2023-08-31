@@ -1081,6 +1081,13 @@ Media queries
 		margin-inline: 2rem;
 	}
 
+	.support--wrapper:first-of-type {
+		padding-left: 2rem;
+	}
+	.support--wrapper:last-of-type {
+		padding-right: 2rem;
+	}
+
 	.support--form button[type="submit"] {
 		grid-column: 1/4;
 	}
