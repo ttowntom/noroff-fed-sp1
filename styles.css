@@ -364,10 +364,10 @@ section h2 {
 .clr--green {
 	color: var(--clr-green-dark);
 }
-.clr-orange {
+.clr--orange {
 	color: var(--clr-orange);
 }
-.clr-black {
+.clr--black {
 	color: var(--clr-black);
 }
 
@@ -477,6 +477,10 @@ section h2 {
 #hero--img-home {
 	background: linear-gradient(to top, hsla(0, 0%, 0%, 0.9), transparent 80%),
 		url("/img/hero/home.jpg") no-repeat center center;
+}
+#hero--img-exhibition-spaces {
+	background: linear-gradient(to top, hsla(0, 0%, 0%, 0.9), transparent 80%),
+		url("/img/hero/exhibitionSpaces.jpg") no-repeat center center;
 }
 #hero--img-about {
 	background: linear-gradient(to top, hsla(0, 0%, 0%, 0.9), transparent 80%),
