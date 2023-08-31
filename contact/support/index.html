@@ -74,10 +74,10 @@
 					preserveAspectRatio="none">
 					<!-- Modified to get the gradient fill -->
 					<defs>
-						<linearGradient id="gradient" gradientTransform="rotate(90)">
+						<lineargradient id="gradient" gradientTransform="rotate(90)">
 							<stop offset="30%" stop-color="#25598c" />
 							<stop offset="70%" stop-color="#3883A4" />
-						</linearGradient>
+						</lineargradient>
 					</defs>
 					<!-- Modification end -->
 					<path
@@ -119,95 +119,99 @@
 
 			<section>
 				<h2 class="container">Support form</h2>
-						<form action="/contact/support/success/" class="support--container support--form">
-							<div class="support--wrapper">
-								<h3>Contact information</h3>
-								<div>
-									<label for="first-name">First name</label>
-									<input
-										type="text"
-										name="first-name"
-										id="first-name"
-										placeholder="First name" />
-								</div>
-								<div>
-									<label for="last-name">Last name</label>
-									<input
-										type="text"
-										name="last-name"
-										id="last-name"
-										placeholder="Last name" />
-								</div>
-								<div>
-									<label for="email">Email</label>
-									<input
-										type="email"
-										name="email"
-										id="email"
-										placeholder="name@example.com" />
-								</div>
-								<div>
-									<label for="phone">Phone</label>
-									<input
-										type="text"
-										name="phone"
-										id="phone"
-										placeholder="+44 456 678 903" />
-								</div>
-							</div>
-							<div class="support--wrapper">
-								<h3 class="margin-top-1">Donation</h3>
-								<div>
-									<label for="donation-amount">Amount</label>
-									<input
-										type="text"
-										name="donation-amount"
-										id="donation-amount"
-										placeholder="$50" />
-								</div>
-								<div>
-									<label for="creditcard">Credit card number</label>
-									<input
-										id="creditcard"
-										name="creditcard"
-										type="tel"
-										inputmode="numeric"
-										pattern="[0-9\s]{13,19}"
-										maxlength="19"
-										placeholder="xxxx xxxx xxxx xxxx" />
-									<!-- Suggestion from Stack Overflow: https://stackoverflow.com/questions/48534229/what-is-the-correct-input-type-for-credit-card-numbers -->
-								</div>
-								<div>
-									<label for="cardholder">Cardholders name</label>
-									<input
-										type="text"
-										name="cardholder"
-										id="cardholder"
-										placeholder="Full name" />
-								</div>
-								<div class="support--form-flex">
-									<div class="">
-										<label for="expiry-date">Expiry date</label>
-										<input type="date" name="expiry-date" id="expiry-date" />
-									</div>
-									<div class="">
-										<label for="ccv">CCV</label>
-										<input type="text" name="ccv" id="ccv" placeholder="123" />
-									</div>
-								</div>
-							</div>
-							<div class="support--wrapper">
-								<h3 class="margin-top-1">Comment</h3>
-								<div>
-									<label for="comment">Comment</label>
-									<textarea
-										name="comment"
-										id="comment" placeholder="Your message here.."></textarea>
-								</div>
-							</div>
-							<button type="submit">Send <i class="fa-solid fa-paper-plane-top"></i></button>
-						</form>
+				<form
+					action="/contact/support/success/"
+					class="support--container support--form">
+					<div class="support--wrapper">
+						<h3>Contact information</h3>
+						<div>
+							<label for="first-name">First name</label>
+							<input
+								type="text"
+								name="first-name"
+								id="first-name"
+								placeholder="First name" />
+						</div>
+						<div>
+							<label for="last-name">Last name</label>
+							<input
+								type="text"
+								name="last-name"
+								id="last-name"
+								placeholder="Last name" />
+						</div>
+						<div>
+							<label for="email">Email</label>
+							<input
+								type="email"
+								name="email"
+								id="email"
+								placeholder="name@example.com" />
+						</div>
+						<div>
+							<label for="phone">Phone</label>
+							<input
+								type="text"
+								name="phone"
+								id="phone"
+								placeholder="+44 456 678 903" />
+						</div>
 					</div>
+					<div class="support--wrapper">
+						<h3 class="margin-top-1">Donation</h3>
+						<div>
+							<label for="donation-amount">Amount</label>
+							<input
+								type="text"
+								name="donation-amount"
+								id="donation-amount"
+								placeholder="$50" />
+						</div>
+						<div>
+							<label for="creditcard">Credit card number</label>
+							<input
+								id="creditcard"
+								name="creditcard"
+								type="tel"
+								inputmode="numeric"
+								pattern="[0-9\s]{13,19}"
+								maxlength="19"
+								placeholder="xxxx xxxx xxxx xxxx" />
+							<!-- Suggestion from Stack Overflow: https://stackoverflow.com/questions/48534229/what-is-the-correct-input-type-for-credit-card-numbers -->
+						</div>
+						<div>
+							<label for="cardholder">Cardholders name</label>
+							<input
+								type="text"
+								name="cardholder"
+								id="cardholder"
+								placeholder="Full name" />
+						</div>
+						<div class="support--form-flex">
+							<div class="">
+								<label for="expiry-date">Expiry date</label>
+								<input type="date" name="expiry-date" id="expiry-date" />
+							</div>
+							<div class="">
+								<label for="ccv">CCV</label>
+								<input type="text" name="ccv" id="ccv" placeholder="123" />
+							</div>
+						</div>
+					</div>
+					<div class="support--wrapper">
+						<h3 class="margin-top-1">Comment</h3>
+						<div>
+							<label for="comment">Comment</label>
+							<textarea
+								name="comment"
+								id="comment"
+								placeholder="Your message here.."></textarea>
+						</div>
+					</div>
+					<button type="submit">
+						Send <i class="fa-solid fa-paper-plane-top"></i>
+					</button>
+				</form>
 			</section>
 
 			<div class="cta cta--museum-club">
@@ -234,10 +238,10 @@
 					preserveAspectRatio="none">
 					<!-- Modified to get the gradient fill -->
 					<defs>
-						<linearGradient id="gradient-bottom" gradientTransform="rotate(90)">
+						<lineargradient id="gradient-bottom" gradientTransform="rotate(90)">
 							<stop offset="5%" stop-color="#25598c" />
 							<stop offset="100%" stop-color="#06162e" />
-						</linearGradient>
+						</lineargradient>
 					</defs>
 					<!-- Modification end -->
 					<path
@@ -304,7 +308,7 @@
 			<div class="footer-bottom flex">
 				<p>&copy; 2023 Community Science Museum</p>
 				<div>
-					<i class="fa-solid fa-pipe"></i> <a href="#">Terms & Conditions</a>
+					<i class="fa-solid fa-pipe"></i> <a href="#">Terms and Conditions</a>
 				</div>
 			</div>
 		</footer>
