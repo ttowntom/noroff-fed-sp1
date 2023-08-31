@@ -466,6 +466,10 @@ section h2 {
 	background: linear-gradient(to top, hsla(0, 0%, 0%, 0.9), transparent 80%),
 		url("/img/hero/contact.jpg") no-repeat center center;
 }
+#hero--img-support {
+	background: linear-gradient(to top, hsla(0, 0%, 0%, 0.9), transparent 80%),
+		url("/img/hero/support.jpg") no-repeat center center;
+}
 
 /* ----------Exhibition background images---------- */
 .exhibition--img {
@@ -538,7 +542,8 @@ section h2 {
 .exhibitions--container,
 .news--container,
 .contact-info--container,
-.tabs--container {
+.tabs--container,
+.support--container {
 	display: grid;
 	gap: 1rem;
 }
@@ -781,6 +786,82 @@ section h2 {
 	content: "\f041";
 }
 
+/* ----------Support---------- */
+.support--container {
+	position: relative;
+	background-color: var(--clr-black);
+	border: 3px solid var(--clr-pink);
+	border-radius: 15px 15px 0 0;
+}
+
+.support--wrapper {
+	padding-inline: 0.5rem;
+}
+
+.support--wrapper h3 {
+	text-align: center;
+	margin: 2rem 0 0.5rem 0;
+}
+
+.support--wrapper h3:first-of-type {
+	margin-top: 1rem;
+}
+
+.support--form label {
+	display: block;
+	font-family: var(--ff-subHeader);
+	font-size: 1.25rem;
+	margin-bottom: 0.5rem;
+}
+
+.support--form input,
+.support--form textarea {
+	width: 100%;
+	height: 2.5rem;
+}
+
+.support--form textarea {
+	height: 10rem;
+}
+
+.support--form input::placeholder,
+.support--form textarea::placeholder {
+	padding-left: 0.5rem;
+}
+
+.support--wrapper div label {
+	margin-top: 1rem;
+	margin-bottom: 0.25rem;
+}
+
+.support--form-flex {
+	display: flex;
+	flex-direction: row;
+	gap: 1rem;
+}
+.support--form-flex div {
+	flex: 1;
+}
+
+.support--form button[type="submit"] {
+	display: flex;
+	gap: 1rem;
+	align-items: baseline;
+	justify-content: end;
+	width: 100%;
+	padding: 0.5rem;
+	background-color: var(--clr-pink);
+	font-family: var(--ff-subHeader);
+	color: var(--clr-white);
+	border: 0;
+	font-size: 1.5rem;
+	cursor: pointer;
+}
+
+.support--form button i {
+	transform: rotate(-45deg);
+}
+
 /* ----------Footer---------- */
 .footer-main {
 	display: flex;
@@ -967,6 +1048,15 @@ Media queries
 
 	.contact--map {
 		margin-top: -3rem;
+	}
+
+	/* ----------Support---------- */
+	.support--container {
+		grid-template-columns: 1fr 1fr 1fr;
+	}
+
+	.support--form button[type="submit"] {
+		grid-column: 1/4;
 	}
 
 	/* ----------Footer---------- */
