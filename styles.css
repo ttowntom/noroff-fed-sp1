@@ -178,6 +178,10 @@ a {
 	text-decoration: none;
 }
 
+strong {
+	font-weight: var(--fw-600);
+}
+
 .container h2,
 section h2 {
 	margin-top: 2rem;
@@ -486,6 +490,10 @@ section h2 {
 	background: linear-gradient(to top, hsla(0, 0%, 0%, 0.9), transparent 80%),
 		url("/img/hero/cosmology.jpg") no-repeat center center;
 }
+#hero--img-cosmic-odyssey {
+	background: linear-gradient(to top, hsla(0, 0%, 0%, 0.9), transparent 80%),
+		url("/img/hero/cosmicOdyssey.jpg") no-repeat center center;
+}
 #hero--img-about {
 	background: linear-gradient(to top, hsla(0, 0%, 0%, 0.9), transparent 80%),
 		url("/img/hero/about.jpg") no-repeat center center;
@@ -630,6 +638,12 @@ section h2 {
 	content: "\f061\f061";
 }
 
+.exhibition--content-container {
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+}
+
 /* Exhibitions cards backgrounds */
 .ehxibition--cosmology::before {
 	background-image: url("/img/exhibitions/cosmology.jpg");
@@ -771,12 +785,14 @@ section h2 {
 
 /* ----------Contact---------- */
 .contact-info--container,
-.exhibition-highlight--container {
+.exhibition-highlight--container,
+.exhibition-details--container {
 	grid-template-columns: 1fr 1fr;
 }
 
 .contact-info--wrapper,
-.exhibition-highlight--wrapper {
+.exhibition-highlight--wrapper,
+.exhibition-detail--wrapper {
 	position: relative;
 	display: grid;
 	align-content: stretch;
@@ -792,12 +808,12 @@ section h2 {
 	text-align: center;
 }
 .contact-info--wrapper::before,
-.exhibition-highlight--wrapper::before {
+.exhibition-highlight--wrapper::before,
+.exhibition-detail--wrapper::before {
 	position: absolute;
 	font-family: "Font Awesome 5 Pro";
 	font-weight: 900;
 	color: var(--clr-white);
-	/* font-size: 6rem; */
 	font-size: clamp(2rem, 10vw, 6rem);
 	bottom: 0;
 	left: 0;
@@ -805,19 +821,40 @@ section h2 {
 }
 
 .contact-info--wrapper h3,
-.exhibition-highlight--wrapper h3 {
+.exhibition-highlight--wrapper h3,
+.exhibition-detail--wrapper h3 {
 	font-size: 1.25rem;
 	margin-bottom: 0.5rem;
 }
 .contact-info--wrapper p,
-.exhibition-highlight--wrapper p {
+.exhibition-highlight--wrapper p,
+.exhibition-detail--wrapper p {
 	margin-top: 0.5rem;
 	font-weight: var(--fw-600);
 }
+.exhibition-detail--wrapper p {
+	font-weight: var(--fw-300);
+}
+
+.exhibition--content-wrapper p {
+	margin: 0 0.5rem;
+}
+.exhibition--content-wrapper p:not(:first-of-type) {
+	margin-top: 1rem;
+}
+
+.exhibition--content-wrapper img {
+	object-fit: cover;
+	max-height: 25vh;
+	width: 100%;
+	margin-block: 1rem;
+}
+
 .contact-info--wrapper a {
 	color: var(--clr-white);
 }
-.contact-info--wrapper span {
+.contact-info--wrapper span,
+.exhibition-detail--wrapper span {
 	display: block;
 	font-weight: var(--fw-300);
 }
@@ -845,6 +882,15 @@ section h2 {
 }
 .exhibition-highlight--stars::before {
 	content: "\f005";
+}
+.exhibition-details--calendar::before {
+	content: "\f133";
+}
+.exhibition-details--family::before {
+	content: "\e300";
+}
+.exhibition-details--sign::before {
+	content: "\f277";
 }
 
 /* ----------Did you know cards---------- */
@@ -1102,6 +1148,35 @@ Media queries
 
 	.exhibition-highlight--container {
 		grid-template-columns: repeat(4, 1fr);
+	}
+
+	.exhibition-details--container {
+		grid-template-columns: repeat(3, 1fr);
+		gap: 2rem;
+	}
+
+	.exhibition--content-container {
+		margin: 0 2rem;
+		flex-direction: row;
+	}
+
+	.exhibition--content-wrapper:first-of-type {
+		display: flex;
+		flex-direction: column-reverse;
+	}
+	..exhibition--content-wrapper:first-child {
+		margin-top: 0;
+	}
+
+	.exhibition--content-wrapper p {
+		margin: 0;
+	}
+	.exhibition--content-wrapper p:not(:first-of-type) {
+		margin-top: 1rem;
+	}
+
+	.exhibition--content-wrapper img {
+		border-radius: 5px;
 	}
 
 	/* ----------Did you know cards---------- */
