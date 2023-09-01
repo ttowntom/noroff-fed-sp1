@@ -482,6 +482,10 @@ section h2 {
 	background: linear-gradient(to top, hsla(0, 0%, 0%, 0.9), transparent 80%),
 		url("/img/hero/exhibitionSpaces.jpg") no-repeat center center;
 }
+#hero--img-cosmology {
+	background: linear-gradient(to top, hsla(0, 0%, 0%, 0.9), transparent 80%),
+		url("/img/hero/cosmology.jpg") no-repeat center center;
+}
 #hero--img-about {
 	background: linear-gradient(to top, hsla(0, 0%, 0%, 0.9), transparent 80%),
 		url("/img/hero/about.jpg") no-repeat center center;
@@ -570,7 +574,8 @@ section h2 {
 .news--container,
 .contact-info--container,
 .tabs--container,
-.support--container {
+.support--container,
+.did-you-know--container {
 	display: grid;
 	gap: 1rem;
 }
@@ -588,6 +593,7 @@ section h2 {
 	content: "";
 	display: block;
 	position: absolute;
+	background-position: center center;
 	background-size: cover;
 	top: 0;
 	left: 0;
@@ -637,6 +643,15 @@ section h2 {
 .exhibition--ecology::before {
 	background-image: url("/img/exhibitions/ecology.jpg");
 }
+.exhibition--galactic-explorations::before {
+	background-image: url("/img/exhibitions/galacticExplorations.jpg");
+}
+.exhibition--time-travelers::before {
+	background-image: url("/img/exhibitions/timeTravelers.jpg");
+}
+.exhibition--cosmic-enigmas::before {
+	background-image: url("/img/exhibitions/cosmicEnigmas.jpg");
+}
 
 /* ----------Exhibition spaces---------- */
 .tabs--container > a:not(:first-of-type) {
@@ -648,10 +663,6 @@ section h2 {
 	border-radius: 15px 15px 0 0;
 	height: 100%;
 }
-
-/* .tabs--wrapper div:not(:first-of-type) {
-	display: block;
-} */
 
 .tabs--wrapper div {
 	display: flex;
@@ -708,7 +719,8 @@ section h2 {
 }
 
 /* ----------About---------- */
-.about--wrapper {
+.about--wrapper,
+.did-you-know--wrapper {
 	display: flex;
 	flex-direction: column;
 	margin-top: 1rem;
@@ -716,18 +728,29 @@ section h2 {
 	color: var(--clr-black);
 }
 
-.about--wrapper img {
+.did-you-know--wrapper {
+	justify-content: space-between;
+}
+
+.about--wrapper img,
+.did-you-know--wrapper img {
 	border-radius: 0 0 15px 15px;
 	max-height: 20rem;
 	width: 100%;
 	object-fit: cover;
 }
 
-.about--wrapper h2 {
+.did-you-know--wrapper img {
+	max-height: 8rem;
+}
+
+.about--wrapper h2,
+.did-you-know--wrapper h3 {
 	margin: 1.5rem 0.5rem 0.5rem 0.5rem;
 }
 
-.about--wrapper p {
+.about--wrapper p,
+.did-you-know--wrapper p {
 	margin-inline: 0.5rem;
 	margin-bottom: 1rem;
 }
@@ -736,7 +759,8 @@ section h2 {
 	background-color: var(--clr-green);
 	border: 3px solid var(--clr-green);
 }
-.about--wrapper-orange {
+.about--wrapper-orange,
+.did-you-know--wrapper {
 	background-color: var(--clr-orange);
 	border: 3px solid var(--clr-orange);
 }
@@ -746,16 +770,19 @@ section h2 {
 }
 
 /* ----------Contact---------- */
-.contact-info--container {
+.contact-info--container,
+.exhibition-highlight--container {
 	grid-template-columns: 1fr 1fr;
 }
 
-.contact-info--wrapper {
+.contact-info--wrapper,
+.exhibition-highlight--wrapper {
 	position: relative;
 	display: grid;
 	align-content: stretch;
 	margin: 0 auto;
 	width: 100%;
+	height: 100%;
 	max-height: fit-content;
 	padding-inline: 0.5rem;
 	padding-block: 1rem;
@@ -764,7 +791,8 @@ section h2 {
 	border-radius: 15px;
 	text-align: center;
 }
-.contact-info--wrapper::before {
+.contact-info--wrapper::before,
+.exhibition-highlight--wrapper::before {
 	position: absolute;
 	font-family: "Font Awesome 5 Pro";
 	font-weight: 900;
@@ -776,11 +804,13 @@ section h2 {
 	opacity: 0.1;
 }
 
-.contact-info--wrapper h3 {
+.contact-info--wrapper h3,
+.exhibition-highlight--wrapper h3 {
 	font-size: 1.25rem;
 	margin-bottom: 0.5rem;
 }
-.contact-info--wrapper p {
+.contact-info--wrapper p,
+.exhibition-highlight--wrapper p {
 	margin-top: 0.5rem;
 	font-weight: var(--fw-600);
 }
@@ -812,6 +842,9 @@ section h2 {
 }
 .contact-info--location::before {
 	content: "\f041";
+}
+.exhibition-highlight--stars::before {
+	content: "\f005";
 }
 
 /* ----------Support---------- */
@@ -1039,6 +1072,10 @@ Media queries
 		padding: 0.75rem 2rem;
 	}
 
+	.exhibition-highlight--container {
+		grid-template-columns: repeat(4, 1fr);
+	}
+
 	/* ----------Exhibition spaces---------- */
 	.tabs--container {
 		grid-template-columns: repeat(2, 1fr);
@@ -1048,9 +1085,11 @@ Media queries
 	.tabs--container > a:nth-of-type(2) {
 		margin-top: 0;
 	}
-	/* .tabs--container > a:not(:nth-of-type(3)) {
-		margin-top: 0;
-	} */
+
+	.did-you-know--container {
+		grid-template-columns: repeat(2, 1fr);
+		padding-inline: 2rem;
+	}
 
 	/* ----------Events and news---------- */
 	.news--wrapper {
