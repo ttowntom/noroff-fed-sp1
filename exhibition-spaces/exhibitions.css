@@ -1,0 +1,167 @@
+/**********************************************
+Exhibition pages styles
+**********************************************/
+/* ----------Exhibition background images---------- */
+.exhibition--img {
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+}
+
+#exhibition--img-cosmology {
+	background-image: url("/img/exhibitions/cosmology.jpg");
+}
+#exhibition--img-evolution {
+	background-image: url("/img/exhibitions/evolution.jpg");
+}
+#exhibition--img-robotics {
+	background-image: url("/img/exhibitions/robotics.jpg");
+}
+#exhibition--img-ecology {
+	background-image: url("/img/exhibitions/ecology.jpg");
+}
+
+/* ----------Exhibitions---------- */
+.exhibitions--container,
+.news--container,
+.contact-info--container,
+.tabs--container,
+.support--container,
+.did-you-know--container {
+	display: grid;
+	gap: 1rem;
+}
+
+.exhibitions--wrapper {
+	position: relative;
+	gap: 1rem;
+	padding-inline: 0.5rem;
+	grid-template-rows: auto auto 1fr auto;
+	background-color: var(--clr-black-actual);
+	border: 3px solid var(--clr-pink);
+	border-radius: 15px 15px 0 0;
+}
+.exhibitions--wrapper::before {
+	content: "";
+	display: block;
+	position: absolute;
+	background-position: center center;
+	background-size: cover;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	opacity: 0.3;
+}
+.exhibitions--wrapper p,
+.exhibitions--wrapper h3 {
+	position: relative;
+}
+.exhibitions--wrapper p:first-of-type {
+	margin-top: 1rem;
+}
+.exhibitions--wrapper p:last-of-type {
+	margin-bottom: 3rem;
+}
+
+.exhibition-wrapper-link {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	padding-block: 0.5rem;
+	background-color: var(--clr-pink);
+	font-family: var(--ff-subHeader);
+	color: var(--clr-white);
+	font-size: 1.5rem;
+}
+.exhibition-wrapper-link:before {
+	content: "\f061";
+}
+.exhibition-wrapper-link:after {
+	content: "\f061\f061";
+}
+
+.exhibition--content-container {
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+}
+
+/* ----------Did you know cards---------- */
+.did-you-know--container {
+	display: flex;
+	overflow-x: auto;
+	gap: 1rem;
+	/* Causes horizontal scroll on body @ 263px > */
+	max-width: 90vw;
+	margin: 0 auto;
+}
+
+.did-you-know--wrapper {
+	flex: 0 0 auto;
+	width: 80%;
+	max-width: 30rem;
+	border: 3px solid var(--clr-orange);
+	white-space: normal; /* Ensure text wraps properly */
+	margin-bottom: 2rem;
+}
+
+.did-you-know--wrapper:first-child {
+	margin-left: 2rem;
+}
+.did-you-know--wrapper:last-child {
+	margin-right: 2rem;
+}
+
+/* Exhibitions cards backgrounds */
+.ehxibition--cosmology::before {
+	background-image: url("/img/exhibitions/cosmology.jpg");
+}
+.exhibition--evolution::before {
+	background-image: url("/img/exhibitions/evolution.jpg");
+}
+.exhibition--robotics::before {
+	background-image: url("/img/exhibitions/robotics.jpg");
+}
+.exhibition--ecology::before {
+	background-image: url("/img/exhibitions/ecology.jpg");
+}
+.exhibition--galactic-explorations::before {
+	background-image: url("/img/exhibitions/galacticExplorations.jpg");
+}
+.exhibition--time-travelers::before {
+	background-image: url("/img/exhibitions/timeTravelers.jpg");
+}
+.exhibition--cosmic-enigmas::before {
+	background-image: url("/img/exhibitions/cosmicEnigmas.jpg");
+}
+
+/* ----------Exhibition spaces---------- */
+.tabs--container > a:not(:first-of-type) {
+	margin-top: -2rem;
+}
+
+.tabs--wrapper {
+	padding: 0.5rem 0.5rem 2rem 0.5rem;
+	border-radius: 15px 15px 0 0;
+	height: 100%;
+}
+
+.tabs--wrapper div {
+	display: flex;
+	gap: 1rem;
+	margin-top: 1rem;
+	align-items: center;
+}
+
+.tabs--wrapper-icon {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: var(--clr-white);
+	padding: 0.75rem;
+	aspect-ratio: 1/1;
+	font-size: 1.5rem;
+	border-radius: 50%;
+}

@@ -1,0 +1,70 @@
+/**********************************************
+Mobile media queries
+**********************************************/
+@media (max-width: 766px) {
+	/* ----------Sections---------- */
+	header {
+		grid-template-columns: max-content auto auto;
+	}
+
+	.container {
+		padding-inline: 0.5rem;
+	}
+
+	/* ----------Hero background images---------- */
+	.hero--img {
+		min-height: 40vh;
+	}
+
+	/* ----------Header---------- */
+	#nav-main {
+		position: absolute;
+		top: 5.2rem;
+		width: 100%;
+		padding-top: 7rem;
+		padding-bottom: 3rem;
+		text-align: center;
+		background-color: var(--clr-white-actual);
+		border-radius: 0 0 15px 15px;
+		box-shadow: 0 1rem 1rem var(--clr-grey-neutral);
+	}
+
+	.nav-list-header {
+		flex-direction: column;
+	}
+
+	.nav-list-header li:not(:last-child) {
+		margin-bottom: 0.5rem;
+	}
+
+	.nav-list-header li a {
+		color: var(--clr-black);
+	}
+
+	.nav-list-header li a.hover-nav:is(:hover, :active, :focus) {
+		text-decoration: none;
+	}
+
+	.hover-nav {
+		display: block;
+		margin: 0 auto;
+		padding-block: 0.25rem;
+		width: 12rem;
+		border-radius: 0.25rem;
+	}
+	.hover-nav:is(:hover, :active, :focus) {
+		color: var(--clr-white);
+	}
+	.hover-blue:is(:hover, :active, :focus) {
+		background-color: var(--clr-blue-accent);
+	}
+	.hover-pink:is(:hover, :active, :focus) {
+		background-color: var(--clr-pink);
+	}
+	.hover-green:is(:hover, :active, :focus) {
+		background-color: var(--clr-green-dark);
+	}
+	.hover-black:is(:hover, :active, :focus) {
+		background-color: var(--clr-grey-light);
+	}
+}

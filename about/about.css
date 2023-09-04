@@ -1,0 +1,52 @@
+/**********************************************
+About page styles
+**********************************************/
+.about--wrapper,
+.did-you-know--wrapper {
+	display: flex;
+	flex-direction: column;
+	margin-top: 1rem;
+	border-radius: 15px;
+	color: var(--clr-black);
+}
+
+.did-you-know--wrapper {
+	justify-content: space-between;
+}
+
+.about--wrapper img,
+.did-you-know--wrapper img {
+	border-radius: 0 0 15px 15px;
+	max-height: 20rem;
+	width: 100%;
+	object-fit: cover;
+}
+
+.did-you-know--wrapper img {
+	max-height: 8rem;
+}
+
+.about--wrapper h2,
+.did-you-know--wrapper h3 {
+	margin: 1.5rem 0.5rem 0.5rem 0.5rem;
+}
+
+.about--wrapper p,
+.did-you-know--wrapper p {
+	margin-inline: 0.5rem;
+	margin-bottom: 1rem;
+}
+
+.about--wrapper-green {
+	background-color: var(--clr-green);
+	border: 3px solid var(--clr-green);
+}
+.about--wrapper-orange,
+.did-you-know--wrapper {
+	background-color: var(--clr-orange);
+	border: 3px solid var(--clr-orange);
+}
+.about--wrapper-blue {
+	background-color: var(--clr-blue-accent);
+	border: 3px solid var(--clr-blue-accent);
+}
