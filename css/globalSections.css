@@ -172,8 +172,16 @@ footer {
 }
 
 .footer-bottom {
+	flex-wrap: wrap;
+	gap: 0.5rem;
+	justify-content: center;
+	align-items: center;
+}
+
+.footer-bottom > * {
 	align-items: center;
 	justify-content: center;
+	width: max-content;
 }
 
 .footer-bottom p {
