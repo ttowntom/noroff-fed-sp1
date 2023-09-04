@@ -29,6 +29,7 @@ Desktop/tablet media queries
 
 	.socials {
 		flex-direction: column;
+		margin-right: 1rem;
 	}
 
 	.grid-cards {
