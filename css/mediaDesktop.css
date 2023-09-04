@@ -116,6 +116,28 @@ Desktop/tablet media queries
 
 	.exhibition--content-wrapper img {
 		border-radius: 5px;
+		margin: 0;
+	}
+
+	.exhibition--content-container img:first-of-type {
+		margin-top: 0;
+		margin-bottom: 1rem;
+	}
+
+	.exhibition--content-container img:last-of-type {
+		margin-top: 1rem;
+		margin-bottom: 0;
+	}
+
+	.exhibition--content-container {
+		grid-template-columns: repeat(2, 1fr);
+	}
+
+	.exhibition--content-container img {
+		object-fit: cover;
+		/* max-height: 25vh; */
+		height: 100%;
+		width: 100%;
 	}
 
 	/* ----------Did you know cards---------- */

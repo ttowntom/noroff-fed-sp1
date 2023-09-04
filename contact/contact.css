@@ -50,23 +50,6 @@ Contact pages styles
 	margin-top: 0.5rem;
 	font-weight: var(--fw-600);
 }
-.exhibition-detail--wrapper p {
-	font-weight: var(--fw-300);
-}
-
-.exhibition--content-wrapper p {
-	margin: 0 0.5rem;
-}
-.exhibition--content-wrapper p:not(:first-of-type) {
-	margin-top: 1rem;
-}
-
-.exhibition--content-wrapper img {
-	object-fit: cover;
-	max-height: 25vh;
-	width: 100%;
-	margin-block: 1rem;
-}
 
 .contact-info--wrapper a {
 	color: var(--clr-white);
@@ -97,18 +80,6 @@ Contact pages styles
 }
 .contact-info--location::before {
 	content: "\f041";
-}
-.exhibition-highlight--stars::before {
-	content: "\f005";
-}
-.exhibition-details--calendar::before {
-	content: "\f133";
-}
-.exhibition-details--family::before {
-	content: "\e300";
-}
-.exhibition-details--sign::before {
-	content: "\f277";
 }
 
 /* ----------Support---------- */

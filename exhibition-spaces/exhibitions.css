@@ -83,9 +83,54 @@ Exhibition pages styles
 }
 
 .exhibition--content-container {
+	display: grid;
+	grid-template-rows: auto 1fr;
+	gap: 1rem;
+}
+
+.exhibition--content-container img {
+	object-fit: cover;
+	max-height: 25vh;
+	width: 100%;
+}
+
+/* .exhibition--content-container {
 	display: flex;
 	flex-direction: column;
 	gap: 1rem;
+} */
+
+.exhibition-detail--wrapper p {
+	font-weight: var(--fw-300);
+}
+
+.exhibition--content-wrapper p {
+	margin: 0 0.5rem;
+}
+.exhibition--content-wrapper p:not(:first-of-type) {
+	margin-top: 1rem;
+}
+
+.exhibition--content-wrapper img {
+	object-fit: cover;
+	max-height: 25vh;
+	width: 100%;
+	margin-block: 1rem;
+}
+
+/* Exhibitions cards backgrounds */
+
+.exhibition-highlight--stars::before {
+	content: "\f005";
+}
+.exhibition-details--calendar::before {
+	content: "\f133";
+}
+.exhibition-details--family::before {
+	content: "\e300";
+}
+.exhibition-details--sign::before {
+	content: "\f277";
 }
 
 /* ----------Did you know cards---------- */
