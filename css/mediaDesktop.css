@@ -161,10 +161,6 @@ Desktop/tablet media queries
 		margin-inline: 2rem;
 	}
 
-	.about--wrapper div {
-		flex: 1;
-	}
-
 	.about--wrapper h2 {
 		margin: 1.5rem 2rem 0.5rem 2rem;
 	}
@@ -178,18 +174,20 @@ Desktop/tablet media queries
 		margin-bottom: 1.5rem;
 	}
 
-	.about--wrapper img {
+	.about--wrapper div {
+		flex: 1;
+	}
+
+	.about--img {
 		border-radius: 0 15px 15px 0;
-		width: 50%;
-		max-height: 100%;
-		object-fit: cover;
+		height: auto;
 	}
 
 	.about--wrapper-reverse {
 		flex-direction: row-reverse;
 	}
 
-	.about--wrapper-reverse img {
+	.about--wrapper-reverse div:last-of-type {
 		border-radius: 15px 0 0 15px;
 	}
 

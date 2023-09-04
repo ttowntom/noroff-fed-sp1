@@ -10,20 +10,26 @@ About page styles
 	color: var(--clr-black);
 }
 
+.about--img {
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+	border-radius: 0 0 15px 15px;
+	height: 20rem;
+}
+
+#about--img-kids {
+	background-image: url("/img/about/kids.jpg");
+}
+#about--img-teachers {
+	background-image: url("/img/about/teachers.jpg");
+}
+#about--img-researchers {
+	background-image: url("/img/about/researchers.jpg");
+}
+
 .did-you-know--wrapper {
 	justify-content: space-between;
-}
-
-.about--wrapper img,
-.did-you-know--wrapper img {
-	border-radius: 0 0 15px 15px;
-	max-height: 20rem;
-	width: 100%;
-	object-fit: cover;
-}
-
-.did-you-know--wrapper img {
-	max-height: 8rem;
 }
 
 .about--wrapper h2,

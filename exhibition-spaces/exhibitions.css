@@ -114,6 +114,17 @@ Exhibition pages styles
 	margin-right: 2rem;
 }
 
+.did-you-know--wrapper img {
+	border-radius: 0 0 15px 15px;
+	max-height: 20rem;
+	width: 100%;
+	object-fit: cover;
+}
+
+.did-you-know--wrapper img {
+	max-height: 8rem;
+}
+
 /* Exhibitions cards backgrounds */
 .ehxibition--cosmology::before {
 	background-image: url("/img/exhibitions/cosmology.jpg");
