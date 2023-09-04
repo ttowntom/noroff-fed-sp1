@@ -111,7 +111,8 @@ Contact pages styles
 	content: "\f277";
 }
 
-* ----------Support---------- */ .support--container {
+/* ----------Support---------- */
+.support--container {
 	position: relative;
 	background-color: var(--clr-black);
 	border: 3px solid var(--clr-pink);

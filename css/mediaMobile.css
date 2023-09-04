@@ -2,20 +2,6 @@
 Mobile media queries
 **********************************************/
 @media (max-width: 766px) {
-	/* ----------Sections---------- */
-	header {
-		grid-template-columns: max-content auto auto;
-	}
-
-	.container {
-		padding-inline: 0.5rem;
-	}
-
-	/* ----------Hero background images---------- */
-	.hero--img {
-		min-height: 40vh;
-	}
-
 	/* ----------Header---------- */
 	#nav-main {
 		position: absolute;

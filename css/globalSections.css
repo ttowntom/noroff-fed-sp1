@@ -11,6 +11,7 @@ footer {
 
 header {
 	position: relative;
+	grid-template-columns: max-content auto auto;
 	background: linear-gradient(var(--clr-blue-accent), #3883a4);
 	padding: 0.5rem 0;
 	align-items: center;
@@ -39,6 +40,9 @@ footer {
 	padding-block: 0.5rem;
 }
 
+.container {
+	padding-inline: 0.5rem;
+}
 .container p {
 	max-width: 60ch;
 }
