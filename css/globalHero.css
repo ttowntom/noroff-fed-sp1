@@ -15,6 +15,7 @@ Global styles
 	margin: 0 auto;
 	max-width: 60ch;
 	justify-content: end;
+	align-items: center;
 }
 
 .hero--content:last-child {
