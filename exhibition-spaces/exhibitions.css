@@ -84,21 +84,41 @@ Exhibition pages styles
 
 .exhibition--content-container {
 	display: grid;
-	grid-template-rows: auto 1fr;
+	/* grid-template-rows: auto 1fr; */
 	gap: 1rem;
+	margin-block: 1rem;
+	grid-template-areas:
+		"exhibition--img-gallery"
+		"exhibition--side-text";
 }
 
-.exhibition--content-container img {
-	object-fit: cover;
-	max-height: 25vh;
+.exhibition--side-text {
+	grid-area: exhibition--side-text;
+	max-width: 60ch;
+	margin: 0 auto;
+}
+
+.exhibition--side-text p:not(:last-of-type) {
+	margin-bottom: 1rem;
+}
+
+.exhibition--img-gallery {
+	grid-area: exhibition--img-gallery;
+}
+
+#exhibition--img-cosmic-odyssey-astronaut {
+	background-image: url("/img/exhibitions/cosmicOdysseyAstronaut.jpg");
+	width: 100%;
+	min-height: 20vh;
+}
+#exhibition--img-cosmic-odyssey-rocket {
+	background-image: url("/img/exhibitions/cosmicOdysseyRocket.jpg");
 	width: 100%;
 }
-
-/* .exhibition--content-container {
-	display: flex;
-	flex-direction: column;
-	gap: 1rem;
-} */
+#exhibition--img-cosmic-odyssey-galaxy {
+	background-image: url("/img/exhibitions/cosmicOdysseyGalaxy.jpg");
+	width: 100%;
+}
 
 .exhibition-detail--wrapper p {
 	font-weight: var(--fw-300);

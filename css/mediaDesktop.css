@@ -85,6 +85,7 @@ Desktop/tablet media queries
 		padding: 0.75rem 2rem;
 	}
 
+	/* ----------Exhibition page---------- */
 	.exhibition-highlight--container {
 		grid-template-columns: repeat(4, 1fr);
 	}
@@ -92,11 +93,6 @@ Desktop/tablet media queries
 	.exhibition-details--container {
 		grid-template-columns: repeat(3, 1fr);
 		gap: 2rem;
-	}
-
-	.exhibition--content-container {
-		margin: 0 2rem;
-		flex-direction: row;
 	}
 
 	.exhibition--content-wrapper:first-of-type {
@@ -119,6 +115,33 @@ Desktop/tablet media queries
 		margin: 0;
 	}
 
+	.exhibition--content-container {
+		grid-template-columns: 1fr 1fr;
+		grid-template-areas: "exhibition--side-text exhibition--img-gallery";
+		max-width: 60ch;
+		margin: 1rem auto;
+	}
+
+	.exhibition--img-gallery {
+		display: grid;
+		grid-template-rows: 2fr 1fr;
+		gap: 1rem;
+	}
+
+	.exhibition--img-gallery > *,
+	.exhibition--img-gallery > * > * {
+		border-radius: 5px;
+	}
+
+	.exhibition--img-gallery div:last-child {
+		display: flex;
+		justify-content: center;
+	}
+
+	#exhibition--img-cosmic-odyssey-astronaut {
+		min-height: auto;
+	}
+
 	.exhibition--content-container img:first-of-type {
 		margin-top: 0;
 		margin-bottom: 1rem;
@@ -127,10 +150,6 @@ Desktop/tablet media queries
 	.exhibition--content-container img:last-of-type {
 		margin-top: 1rem;
 		margin-bottom: 0;
-	}
-
-	.exhibition--content-container {
-		grid-template-columns: repeat(2, 1fr);
 	}
 
 	.exhibition--content-container img {
