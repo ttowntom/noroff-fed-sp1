@@ -173,3 +173,10 @@ Global styles
 	color: var(--fa-secondary-color, inherit);
 	opacity: var(--fa-secondary-opacity, 0.4);
 }
+
+.logo-header {
+	max-width: 12rem;
+}
+.logo-footer {
+	max-width: 8rem;
+}
