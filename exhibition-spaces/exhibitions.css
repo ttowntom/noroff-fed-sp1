@@ -104,9 +104,9 @@ Exhibition pages styles
 /* ----------Exhibition page---------- */
 .exhibition--content-container {
 	display: grid;
-	/* grid-template-rows: auto 1fr; */
 	gap: 1rem;
-	margin-block: 1rem;
+	margin: 1rem 0.5rem;
+	justify-content: center;
 	grid-template-areas:
 		"exhibition--img-gallery"
 		"exhibition--side-text";
@@ -115,7 +115,6 @@ Exhibition pages styles
 .exhibition--side-text {
 	grid-area: exhibition--side-text;
 	max-width: 60ch;
-	margin: 0 auto;
 }
 
 .exhibition--side-text p:not(:last-of-type) {

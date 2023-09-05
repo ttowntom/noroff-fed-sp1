@@ -56,13 +56,6 @@ Global styles
 	text-align: center;
 }
 
-.contained-text {
-	display: flex;
-	flex-direction: column;
-	margin: 0 auto;
-	max-width: 60ch;
-}
-
 .relative {
 	position: relative;
 }
