@@ -172,6 +172,7 @@ footer {
 }
 
 .footer-bottom {
+	margin-inline: 0.5rem;
 	flex-wrap: wrap;
 	gap: 0.5rem;
 	justify-content: center;
