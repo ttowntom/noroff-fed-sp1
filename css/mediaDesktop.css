@@ -85,34 +85,14 @@ Desktop/tablet media queries
 		padding: 0.75rem 2rem;
 	}
 
-	/* ----------Exhibition page---------- */
 	.exhibition-highlight--container {
 		grid-template-columns: repeat(4, 1fr);
 	}
 
+	/* ----------Exhibition page---------- */
 	.exhibition-details--container {
 		grid-template-columns: repeat(3, 1fr);
 		gap: 2rem;
-	}
-
-	.exhibition--content-wrapper:first-of-type {
-		display: flex;
-		flex-direction: column-reverse;
-	}
-	.exhibition--content-wrapper:first-child {
-		margin-top: 0;
-	}
-
-	.exhibition--content-wrapper p {
-		margin: 0;
-	}
-	.exhibition--content-wrapper p:not(:first-of-type) {
-		margin-top: 1rem;
-	}
-
-	.exhibition--content-wrapper img {
-		border-radius: 5px;
-		margin: 0;
 	}
 
 	.exhibition--content-container {
@@ -140,23 +120,6 @@ Desktop/tablet media queries
 
 	#exhibition--img-cosmic-odyssey-astronaut {
 		min-height: auto;
-	}
-
-	.exhibition--content-container img:first-of-type {
-		margin-top: 0;
-		margin-bottom: 1rem;
-	}
-
-	.exhibition--content-container img:last-of-type {
-		margin-top: 1rem;
-		margin-bottom: 0;
-	}
-
-	.exhibition--content-container img {
-		object-fit: cover;
-		/* max-height: 25vh; */
-		height: 100%;
-		width: 100%;
 	}
 
 	/* ----------Did you know cards---------- */

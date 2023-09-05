@@ -82,6 +82,26 @@ Exhibition pages styles
 	content: "\f061\f061";
 }
 
+.exhibition-detail--wrapper p {
+	font-weight: var(--fw-300);
+}
+
+/* Exhibitions cards backgrounds */
+
+.exhibition-highlight--stars::before {
+	content: "\f005";
+}
+.exhibition-details--calendar::before {
+	content: "\f133";
+}
+.exhibition-details--family::before {
+	content: "\e300";
+}
+.exhibition-details--sign::before {
+	content: "\f277";
+}
+
+/* ----------Exhibition page---------- */
 .exhibition--content-container {
 	display: grid;
 	/* grid-template-rows: auto 1fr; */
@@ -106,6 +126,7 @@ Exhibition pages styles
 	grid-area: exhibition--img-gallery;
 }
 
+/* ----------Exhibition page images---------- */
 #exhibition--img-cosmic-odyssey-astronaut {
 	background-image: url("/img/exhibitions/cosmicOdysseyAstronaut.jpg");
 	width: 100%;
@@ -118,39 +139,6 @@ Exhibition pages styles
 #exhibition--img-cosmic-odyssey-galaxy {
 	background-image: url("/img/exhibitions/cosmicOdysseyGalaxy.jpg");
 	width: 100%;
-}
-
-.exhibition-detail--wrapper p {
-	font-weight: var(--fw-300);
-}
-
-.exhibition--content-wrapper p {
-	margin: 0 0.5rem;
-}
-.exhibition--content-wrapper p:not(:first-of-type) {
-	margin-top: 1rem;
-}
-
-.exhibition--content-wrapper img {
-	object-fit: cover;
-	max-height: 25vh;
-	width: 100%;
-	margin-block: 1rem;
-}
-
-/* Exhibitions cards backgrounds */
-
-.exhibition-highlight--stars::before {
-	content: "\f005";
-}
-.exhibition-details--calendar::before {
-	content: "\f133";
-}
-.exhibition-details--family::before {
-	content: "\e300";
-}
-.exhibition-details--sign::before {
-	content: "\f277";
 }
 
 /* ----------Did you know cards---------- */
@@ -168,7 +156,7 @@ Exhibition pages styles
 	width: 80%;
 	max-width: 30rem;
 	border: 3px solid var(--clr-orange);
-	white-space: normal; /* Ensure text wraps properly */
+	white-space: normal;
 	margin-bottom: 2rem;
 }
 
