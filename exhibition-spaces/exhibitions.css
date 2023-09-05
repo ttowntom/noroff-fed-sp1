@@ -82,26 +82,30 @@ Exhibition pages styles
 	content: "\f061\f061";
 }
 
-.exhibition-detail--wrapper p {
-	font-weight: var(--fw-300);
-}
-
 /* Exhibitions cards backgrounds */
 
 .exhibition-highlight--stars::before {
 	content: "\f005";
 }
-.exhibition-details--calendar::before {
-	content: "\f133";
+
+/* ----------Exhibition page---------- */
+.exhibition-detail--wrapper p {
+	font-weight: var(--fw-300);
 }
+
+/* Exhibition details cards backgrounds */
+.exhibition-details--calendar::before {
+	content: "\f073";
+}
+
 .exhibition-details--family::before {
 	content: "\e300";
 }
+
 .exhibition-details--sign::before {
 	content: "\f277";
 }
 
-/* ----------Exhibition page---------- */
 .exhibition--content-container {
 	display: grid;
 	gap: 1rem;
