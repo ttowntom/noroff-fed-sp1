@@ -46,6 +46,14 @@ Desktop/tablet media queries
 		float: left;
 	}
 
+	.nav-current-blue,
+	.nav-current-green,
+	.nav-current-pink,
+	.nav-current-black {
+		background-color: transparent;
+		text-decoration: underline;
+	}
+
 	/* ----------Hero background images---------- */
 	.hero--img {
 		min-height: 600px;

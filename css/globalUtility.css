@@ -132,6 +132,22 @@ Global styles
 	color: var(--clr-black);
 }
 
+#nav-current {
+	color: var(--clr-white);
+}
+.nav-current-blue {
+	background-color: var(--clr-blue-accent);
+}
+.nav-current-green {
+	background-color: var(--clr-green-dark);
+}
+.nav-current-pink {
+	background-color: var(--clr-pink);
+}
+.nav-current-black {
+	background-color: var(--clr-black);
+}
+
 .category,
 .news--category {
 	font-family: var(--ff-subHeader);
