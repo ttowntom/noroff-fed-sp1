@@ -1,0 +1,24 @@
+/**********************************************
+Home page styles
+**********************************************/
+/* ----------Events and news---------- */
+.news--wrapper {
+	gap: 1rem;
+	padding: 1rem 0.5rem;
+	grid-template-rows: auto 1fr;
+	background-color: var(--clr-blue);
+	border-radius: 15px;
+}
+.news--wrapper:is(:hover, :focus, :active) {
+	background-color: var(--clr-black);
+}
+
+.news--top {
+	align-items: start;
+}
+
+.news--header p {
+	margin-top: 0.25rem;
+	margin-bottom: 1rem;
+	font-size: 0.85rem;
+}

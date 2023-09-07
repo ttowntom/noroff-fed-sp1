@@ -30,7 +30,7 @@
 			<a href="/">
 				<img
 					class="logo-header"
-					src="/img/csmLongLogo.svg"
+					src="/img/csmLongLogo.png"
 					alt="Logo for the Community Science Museum" />
 			</a>
 			<p class="opening-hours absolute-top-right">
@@ -49,7 +49,12 @@
 						>
 					</li>
 					<li>
-						<a class="hover-nav hover-pink" href="/about/">About</a>
+						<a
+							id="nav-current"
+							class="nav-current-pink hover-nav hover-pink"
+							href="/about/"
+							>About</a
+						>
 					</li>
 					<li>
 						<a class="hover-nav hover-black" href="/contact/">Contact</a>
@@ -84,7 +89,7 @@
 			<section>
 				<div id="hero--img-about" class="hero--img grid">
 					<div
-						class="hero--content flex flex-column flex-gap-2 flex-center text-align-center">
+						class="hero--content flex flex-column flex-gap-2 text-align-center">
 						<h1>Explore together</h1>
 						<p>
 							Welcome to the heart of curiosity and discovery! We invite you to
@@ -115,7 +120,7 @@
 				</div>
 			</section>
 
-			<section class="margin-top-2">
+			<section class="about--container margin-top-2">
 				<div class="about--wrapper about--wrapper-green">
 					<div>
 						<h2>For kids</h2>
@@ -135,9 +140,7 @@
 							experiment with our team of experts.
 						</p>
 					</div>
-					<img
-						src="/img/about/kids.jpg"
-						alt="A child looking at a science experiment in the museum" />
+					<div id="about--img-kids" class="about--img"></div>
 				</div>
 
 				<div
@@ -157,9 +160,7 @@
 							for a visit.
 						</p>
 					</div>
-					<img
-						src="/img/about/teachers.jpg"
-						alt="A teacher by a whiteboard talking to a student" />
+					<div class="about--img" id="about--img-teachers"></div>
 				</div>
 
 				<div class="about--wrapper about--wrapper-blue">
@@ -173,9 +174,7 @@
 							universities around the country.
 						</p>
 					</div>
-					<img
-						src="/img/about/researchers.jpg"
-						alt="A researcher looking through a microscope" />
+					<div id="about--img-researchers" class="about--img"></div>
 				</div>
 			</section>
 
@@ -219,8 +218,8 @@
 				<div class="flex flex-gap-2">
 					<a href="../">
 						<img
-							class="logo-header"
-							src="/img/csmLogo.svg"
+							class="logo-footer"
+							src="/img/csmLogo.png"
 							alt="Logo for the Community Science Museum" />
 					</a>
 					<div>

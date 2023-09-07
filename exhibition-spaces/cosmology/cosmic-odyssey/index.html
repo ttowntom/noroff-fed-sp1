@@ -30,7 +30,7 @@
 			<a href="/">
 				<img
 					class="logo-header"
-					src="/img/csmLongLogo.svg"
+					src="/img/csmLongLogo.png"
 					alt="Logo for the Community Science Museum" />
 			</a>
 			<p class="opening-hours absolute-top-right">
@@ -44,7 +44,10 @@
 				<ul class="nav-list-header">
 					<li><a class="hover-nav hover-blue" href="/">Home</a></li>
 					<li>
-						<a class="hover-nav hover-green" href="/exhibition-spaces/"
+						<a
+							id="nav-current"
+							class="nav-current-green hover-nav hover-green"
+							href="/exhibition-spaces/"
 							>Exhibition Spaces</a
 						>
 					</li>
@@ -82,7 +85,7 @@
 			<section>
 				<div id="hero--img-cosmic-odyssey" class="hero--img grid">
 					<div
-						class="hero--content flex flex-column flex-gap-2 flex-center text-align-center">
+						class="hero--content flex flex-column flex-gap-2 text-align-center">
 						<h1>Cosmic Odyssey: <span>Journey through the universe</span></h1>
 						<p>
 							Traverse the history of stars, from their birth to their explosive
@@ -122,53 +125,63 @@
 						<p>Cosmos Exhibition Space, Community Science Museum</p>
 					</div>
 				</div>
-				<h2 class="container">About this exhibition</h2>
+
+				<div class="container flex flex-column flex-center">
+					<div>
+						<h2>About this exhibition</h2>
+						<p>
+							Step into the vast expanse of the universe and embark on an
+							extraordinary journey through time and space. 'Cosmic Odyssey' is
+							a six-month exploration that unveils the captivating mysteries of
+							our cosmos. From the birth of stars in interstellar nurseries to
+							the dazzling galaxies that populate the night sky, this exhibition
+							invites you to delve into the wonders that shape our understanding
+							of the universe.
+						</p>
+					</div>
+				</div>
 				<div class="exhibition--content-container">
-					<div class="exhibition--content-wrapper">
-						<div>
-							<p>
-								Step into the vast expanse of the universe and embark on an
-								extraordinary journey through time and space. 'Cosmic Odyssey'
-								is a six-month exploration that unveils the captivating
-								mysteries of our cosmos. From the birth of stars in interstellar
-								nurseries to the dazzling galaxies that populate the night sky,
-								this exhibition invites you to delve into the wonders that shape
-								our understanding of the universe.
-							</p>
-							<p>
-								Immerse yourself in the universe's most breathtaking phenomena.
-								Traverse the galaxies, witness the explosive forces of
-								supernovae, and stand on the brink of black holes' event
-								horizons. Our interactive planetarium will transport you to
-								distant corners of the universe, allowing you to witness the
-								cosmos in ways never before imagined.
-							</p>
-						</div>
-						<img src="/img/exhibitions/cosmicOdysseyRocket.jpg" alt="" />
+					<div class="exhibition--side-text">
+						<p>
+							Immerse yourself in the universe's most breathtaking phenomena.
+							Traverse the galaxies, witness the explosive forces of supernovae,
+							and stand on the brink of black holes' event horizons. Our
+							interactive planetarium will transport you to distant corners of
+							the universe, allowing you to witness the cosmos in ways never
+							before imagined.
+						</p>
+						<p>
+							But this exhibition is more than just stargazing; it's a journey
+							through the history of cosmic discovery. Learn about the pioneers
+							who dared to dream beyond our world, and explore the ongoing
+							research that continues to illuminate the universe's deepest
+							secrets. Engage with hands-on experiments that reveal the laws of
+							physics governing the cosmos, and interact with augmented reality
+							displays that bring distant galaxies right to your fingertips.
+						</p>
 					</div>
-					<div class="exhibition--content-wrapper">
-						<div>
-							<p>
-								But this exhibition is more than just stargazing; it's a journey
-								through the history of cosmic discovery. Learn about the
-								pioneers who dared to dream beyond our world, and explore the
-								ongoing research that continues to illuminate the universe's
-								deepest secrets. Engage with hands-on experiments that reveal
-								the laws of physics governing the cosmos, and interact with
-								augmented reality displays that bring distant galaxies right to
-								your fingertips.
-							</p>
-							<p>
-								Whether you're a budding astronomer, a passionate educator, or
-								simply someone captivated by the beauty of the night sky,
-								'Cosmic Odyssey' promises an adventure of astronomical
-								proportions. Join us as we venture into the unknown, guided by
-								curiosity and the desire to understand the universe that
-								surrounds us.
-							</p>
+					<div class="exhibition--img-gallery">
+						<div
+							id="exhibition--img-cosmic-odyssey-astronaut"
+							class="exhibition--img"></div>
+						<div class="mobile-hide flex flex-gap-1">
+							<div
+								id="exhibition--img-cosmic-odyssey-rocket"
+								class="exhibition--img"></div>
+							<div
+								id="exhibition--img-cosmic-odyssey-galaxy"
+								class="exhibition--img"></div>
 						</div>
-						<img src="/img/exhibitions/cosmicOdysseyAstronaut.jpg" alt="" />
 					</div>
+				</div>
+				<div class="container flex flex-column flex-center">
+					<p>
+						Whether you're a budding astronomer, a passionate educator, or
+						simply someone captivated by the beauty of the night sky, 'Cosmic
+						Odyssey' promises an adventure of astronomical proportions. Join us
+						as we venture into the unknown, guided by curiosity and the desire
+						to understand the universe that surrounds us.
+					</p>
 				</div>
 			</section>
 
@@ -212,8 +225,8 @@
 				<div class="flex flex-gap-2">
 					<a href="/">
 						<img
-							class="logo-header"
-							src="/img/csmLogo.svg"
+							class="logo-footer"
+							src="/img/csmLogo.png"
 							alt="Logo for the Community Science Museum" />
 					</a>
 					<div>

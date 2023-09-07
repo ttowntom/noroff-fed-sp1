@@ -1,0 +1,53 @@
+/**********************************************
+Global styles
+**********************************************/
+/* ----------Hero---------- */
+.hero--img {
+	position: relative;
+	background-size: cover;
+	margin-top: -3.7rem;
+	min-height: 40vh;
+	border-radius: 0 0 15px 15px;
+}
+
+.hero--content {
+	padding-top: 4rem;
+	margin: 0 auto;
+	max-width: 60ch;
+	justify-content: end;
+	align-items: center;
+}
+
+.hero--content:last-child {
+	padding-bottom: 3rem;
+}
+
+/* ----------Hero background images---------- */
+#hero--img-home {
+	background: linear-gradient(to top, hsla(0, 0%, 0%, 0.9), transparent 80%),
+		url("/img/hero/home.jpg") no-repeat center center;
+}
+#hero--img-exhibition-spaces {
+	background: linear-gradient(to top, hsla(0, 0%, 0%, 0.9), transparent 80%),
+		url("/img/hero/exhibitionSpaces.jpg") no-repeat center center;
+}
+#hero--img-cosmology {
+	background: linear-gradient(to top, hsla(0, 0%, 0%, 0.9), transparent 80%),
+		url("/img/hero/cosmology.jpg") no-repeat center center;
+}
+#hero--img-cosmic-odyssey {
+	background: linear-gradient(to top, hsla(0, 0%, 0%, 0.9), transparent 80%),
+		url("/img/hero/cosmicOdyssey.jpg") no-repeat center center;
+}
+#hero--img-about {
+	background: linear-gradient(to top, hsla(0, 0%, 0%, 0.9), transparent 80%),
+		url("/img/hero/about.jpg") no-repeat center center;
+}
+#hero--img-contact {
+	background: linear-gradient(to top, hsla(0, 0%, 0%, 0.9), transparent 80%),
+		url("/img/hero/contact.jpg") no-repeat center center;
+}
+#hero--img-support {
+	background: linear-gradient(to top, hsla(0, 0%, 0%, 0.9), transparent 80%),
+		url("/img/hero/support.jpg") no-repeat center center;
+}
