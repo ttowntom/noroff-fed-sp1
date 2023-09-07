@@ -41,6 +41,9 @@ Exhibition pages styles
 	border: 3px solid var(--clr-pink);
 	border-radius: 15px 15px 0 0;
 }
+.exhibitions--wrapper:is(:hover, :focus, :active) {
+	border: 3px solid var(--clr-white);
+}
 .exhibitions--wrapper::before {
 	content: "";
 	display: block;
@@ -81,6 +84,9 @@ Exhibition pages styles
 }
 .exhibition-wrapper-link:after {
 	content: "\f061\f061";
+}
+.exhibition-wrapper-link:is(:hover, :focus, :active) {
+	background-color: var(--clr-blue);
 }
 
 /* Exhibitions cards backgrounds */
@@ -214,6 +220,10 @@ Exhibition pages styles
 	padding: 0.5rem 0.5rem 2rem 0.5rem;
 	border-radius: 15px 15px 0 0;
 	height: 100%;
+}
+.tabs--wrapper:is(:hover, :focus, :active) {
+	box-shadow: 0 -0.25rem 1rem 0 var(--clr-grey-dark);
+	transform: translate(0, -0.1rem);
 }
 
 .tabs--wrapper div {

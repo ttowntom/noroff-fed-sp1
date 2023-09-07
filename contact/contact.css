@@ -157,6 +157,9 @@ Contact pages styles
 .support--form button i {
 	transform: rotate(-45deg);
 }
+.support--form button[type="submit"]:is(:hover, :focus, :active) {
+	background-color: var(--clr-blue);
+}
 
 .support--thankyou {
 	display: flex;

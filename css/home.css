@@ -9,6 +9,9 @@ Home page styles
 	background-color: var(--clr-blue);
 	border-radius: 15px;
 }
+.news--wrapper:is(:hover, :focus, :active) {
+	background-color: var(--clr-black);
+}
 
 .news--top {
 	align-items: start;
