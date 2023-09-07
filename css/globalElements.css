@@ -23,7 +23,8 @@ h2 span {
 	display: block;
 }
 
-h3 {
+h3,
+.footer-main h2 {
 	font-family: var(--ff-subHeader);
 	font-weight: var(--fw-500);
 	font-size: 1.5rem;
