@@ -48,3 +48,7 @@ section h2 {
 section h2 {
 	margin-top: 4rem;
 }
+
+label span {
+	display: none;
+}
