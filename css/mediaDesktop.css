@@ -18,6 +18,10 @@ Desktop/tablet media queries
 		display: inline-block;
 	}
 
+	.divider-top {
+		top: 4.5rem;
+	}
+
 	.container {
 		padding-inline: 2rem;
 	}
